@@ -1,28 +1,35 @@
 // COLLECTION FUNCTIONS
 
 let myEach = function(collection, callback){
-    // return value should be the original collection
-    // iterate over the collection of elements, passing in each element in turn to the callback function
-    // returns the original, unmodified collection
     if(Array.isArray(collection)){
         for (let i = 0; i < collection.length; i++){
             callback(collection[i], i, collection)
         }
     } else if(typeof(collection) === "object"){
-        for (let i = 0; i < Object.keys(collection).length; i++){
-            callback(collection[Object.keys(collection)[i]], Object.keys(collection)[i], i) 
+        let keys = Object.keys(collection);
+        for (let i = 0; i < keys.length; i++){
+            callback(collection[keys[i]], keys[i], i) 
         }
     }
     return collection
 }
 
 let myMap = function(collection, callback){
-    // return a new array
-    // produces a new array of values by mapping each value in collection through a transformation function, callback
-    // returns the new array without modifying the original
+    let newCollection = [];
+    if(Array.isArray(collection)){
+        for(let i = 0; i < collection.length; i++){
+            newCollection.push(callback(collection[i], i, collection));
+        }
+    } else if(typeof(collection) === "object"){
+        let keys = Object.keys(collection);
+        for (let i = 0; i < keys.length; i++){
+            newCollection.push(callback(collection[keys[i]], keys[i], collection)); 
+        }
+    }
+    return newCollection;
 }
 
-let myReduce = function(collection, callback, acc){
+let myReduce = function(collection, callback, acc = 0){
     // acc is a starting value for the accumulator
     // return a single value
     // iterates through a collection of values and boils it down to a single value
@@ -31,6 +38,15 @@ let myReduce = function(collection, callback, acc){
     // if a start value is not passed to myReduce, the first value in the collection is the start value
     // the callback is passed three arguments: the current value of acc, the current element/value in our iteration...
     // ...and a reference to the entire collection
+    
+    if(!acc){
+        acc = collection[0]
+    }
+    
+    for (let i = 0; i < collection.length; i++){
+        acc = callback(acc, collection[i], collection);
+    }
+    return acc;
 }
 
 let myFind = function(collection, predicate){

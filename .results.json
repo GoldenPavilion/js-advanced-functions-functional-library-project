@@ -2,12 +2,12 @@
   "stats": {
     "suites": 11,
     "tests": 27,
-    "passes": 10,
+    "passes": 13,
     "pending": 0,
-    "failures": 17,
-    "start": "2021-08-27T22:41:37.942Z",
-    "end": "2021-08-27T22:41:39.338Z",
-    "duration": 1396
+    "failures": 14,
+    "start": "2021-08-28T00:54:59.901Z",
+    "end": "2021-08-28T00:55:01.008Z",
+    "duration": 1107
   },
   "tests": [
     {
@@ -20,26 +20,23 @@
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js myEach calls alert properly on object values",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the original collection",
       "fullTitle": "index.js myEach returns the original collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "successfully returns a correctly populated array",
       "fullTitle": "index.js myMap successfully returns a correctly populated array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: Cannot read property 'length' of undefined\n    at arraysEqual (test/indexTest.js:273:28)\n    at Context.<anonymous> (test/indexTest.js:43:14)\n    at processImmediate (node:internal/timers:463:21)",
-        "message": "Cannot read property 'length' of undefined"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original array",
@@ -53,10 +50,7 @@
       "fullTitle": "index.js myMap successfully returns a correctly populated array from modified object values",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: Cannot read property 'length' of undefined\n    at arraysEqual (test/indexTest.js:273:28)\n    at Context.<anonymous> (test/indexTest.js:52:14)\n    at processImmediate (node:internal/timers:463:21)",
-        "message": "Cannot read property 'length' of undefined"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original object",
@@ -68,25 +62,21 @@
     {
       "title": "returns the correct reduced value when passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 40",
-        "showDiff": true,
-        "expected": 40,
-        "stack": "AssertionError: expected undefined to equal 40\n    at Context.<anonymous> (test/indexTest.js:67:32)\n    at processImmediate (node:internal/timers:463:21)"
-      }
+      "err": {}
     },
     {
       "title": "returns the correct reduced value when not passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when not passed an initial value",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 28",
+        "message": "expected 31 to equal 28",
         "showDiff": true,
-        "expected": 28,
-        "stack": "AssertionError: expected undefined to equal 28\n    at Context.<anonymous> (test/indexTest.js:72:32)\n    at processImmediate (node:internal/timers:463:21)"
+        "actual": "31",
+        "expected": "28",
+        "stack": "AssertionError: expected 31 to equal 28\n    at Context.<anonymous> (test/indexTest.js:72:32)\n    at processImmediate (node:internal/timers:463:21)"
       }
     },
     {
@@ -99,7 +89,7 @@
     {
       "title": "returns the correct reduced value from object values",
       "fullTitle": "index.js myReduce returns the correct reduced value from object values",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "message": "expected undefined to equal 28",
@@ -143,7 +133,7 @@
     {
       "title": "returns undefined if the value is not present",
       "fullTitle": "index.js myFind returns undefined if the value is not present",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -201,7 +191,7 @@
     {
       "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js myFirst returns the first n elements of the collection when the second optional argument (n) is provided",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -222,7 +212,7 @@
     {
       "title": "retrieves all the names of the object's own enumerable properties",
       "fullTitle": "index.js myKeys retrieves all the names of the object's own enumerable properties",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: myKeys is not defined\n    at Context.<anonymous> (test/indexTest.js:248:9)\n    at processImmediate (node:internal/timers:463:21)",
@@ -239,7 +229,7 @@
     {
       "title": "retrieves all the values of the object's own properties",
       "fullTitle": "index.js myValues retrieves all the values of the object's own properties",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: Cannot read property 'length' of undefined\n    at arraysEqual (test/indexTest.js:273:12)\n    at Context.<anonymous> (test/indexTest.js:262:9)\n    at processImmediate (node:internal/timers:463:21)",
@@ -257,53 +247,22 @@
   "pending": [],
   "failures": [
     {
-      "title": "successfully returns a correctly populated array",
-      "fullTitle": "index.js myMap successfully returns a correctly populated array",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: Cannot read property 'length' of undefined\n    at arraysEqual (test/indexTest.js:273:28)\n    at Context.<anonymous> (test/indexTest.js:43:14)\n    at processImmediate (node:internal/timers:463:21)",
-        "message": "Cannot read property 'length' of undefined"
-      }
-    },
-    {
-      "title": "successfully returns a correctly populated array from modified object values",
-      "fullTitle": "index.js myMap successfully returns a correctly populated array from modified object values",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: Cannot read property 'length' of undefined\n    at arraysEqual (test/indexTest.js:273:28)\n    at Context.<anonymous> (test/indexTest.js:52:14)\n    at processImmediate (node:internal/timers:463:21)",
-        "message": "Cannot read property 'length' of undefined"
-      }
-    },
-    {
-      "title": "returns the correct reduced value when passed an initial value",
-      "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
-      "duration": 2,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 40",
-        "showDiff": true,
-        "expected": 40,
-        "stack": "AssertionError: expected undefined to equal 40\n    at Context.<anonymous> (test/indexTest.js:67:32)\n    at processImmediate (node:internal/timers:463:21)"
-      }
-    },
-    {
       "title": "returns the correct reduced value when not passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when not passed an initial value",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 28",
+        "message": "expected 31 to equal 28",
         "showDiff": true,
-        "expected": 28,
-        "stack": "AssertionError: expected undefined to equal 28\n    at Context.<anonymous> (test/indexTest.js:72:32)\n    at processImmediate (node:internal/timers:463:21)"
+        "actual": "31",
+        "expected": "28",
+        "stack": "AssertionError: expected 31 to equal 28\n    at Context.<anonymous> (test/indexTest.js:72:32)\n    at processImmediate (node:internal/timers:463:21)"
       }
     },
     {
       "title": "returns the correct reduced value from object values",
       "fullTitle": "index.js myReduce returns the correct reduced value from object values",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "message": "expected undefined to equal 28",
@@ -391,7 +350,7 @@
     {
       "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js myFirst returns the first n elements of the collection when the second optional argument (n) is provided",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -412,7 +371,7 @@
     {
       "title": "retrieves all the names of the object's own enumerable properties",
       "fullTitle": "index.js myKeys retrieves all the names of the object's own enumerable properties",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: myKeys is not defined\n    at Context.<anonymous> (test/indexTest.js:248:9)\n    at processImmediate (node:internal/timers:463:21)",
@@ -422,7 +381,7 @@
     {
       "title": "retrieves all the values of the object's own properties",
       "fullTitle": "index.js myValues retrieves all the values of the object's own properties",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: Cannot read property 'length' of undefined\n    at arraysEqual (test/indexTest.js:273:12)\n    at Context.<anonymous> (test/indexTest.js:262:9)\n    at processImmediate (node:internal/timers:463:21)",
@@ -441,14 +400,21 @@
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js myEach calls alert properly on object values",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the original collection",
       "fullTitle": "index.js myEach returns the original collection",
-      "duration": 0,
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "successfully returns a correctly populated array",
+      "fullTitle": "index.js myMap successfully returns a correctly populated array",
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -460,9 +426,23 @@
       "err": {}
     },
     {
+      "title": "successfully returns a correctly populated array from modified object values",
+      "fullTitle": "index.js myMap successfully returns a correctly populated array from modified object values",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
       "title": "does not modify the original object",
       "fullTitle": "index.js myMap does not modify the original object",
       "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the correct reduced value when passed an initial value",
+      "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -483,7 +463,7 @@
     {
       "title": "returns undefined if the value is not present",
       "fullTitle": "index.js myFind returns undefined if the value is not present",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
