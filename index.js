@@ -55,7 +55,14 @@ let myFind = function(collection, predicate){
     // looks through each value in the collection, returning the first one that passes a truth test (predicate)...
     // ...or undefined if no value passes the test
     // the function should return as soon as it finds an acceptable element, without traversing the rest of the collection
-}
+    for (let i = 0; i < collection.length; i++){
+        if(predicate(collection[i])){
+            return collection[i];
+        } 
+    }
+    return undefined; 
+};
+
 
 let myFilter = function(collection, predicate){
     // predicate is a callback function that returns true or false

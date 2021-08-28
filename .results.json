@@ -2,25 +2,25 @@
   "stats": {
     "suites": 11,
     "tests": 27,
-    "passes": 13,
+    "passes": 15,
     "pending": 0,
-    "failures": 14,
-    "start": "2021-08-28T00:54:59.901Z",
-    "end": "2021-08-28T00:55:01.008Z",
-    "duration": 1107
+    "failures": 12,
+    "start": "2021-08-28T01:15:12.702Z",
+    "end": "2021-08-28T01:15:13.951Z",
+    "duration": 1249
   },
   "tests": [
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js myEach calls alert with each element passed",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js myEach calls alert properly on object values",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -34,7 +34,7 @@
     {
       "title": "successfully returns a correctly populated array",
       "fullTitle": "index.js myMap successfully returns a correctly populated array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -62,7 +62,7 @@
     {
       "title": "returns the correct reduced value when passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -89,7 +89,7 @@
     {
       "title": "returns the correct reduced value from object values",
       "fullTitle": "index.js myReduce returns the correct reduced value from object values",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "message": "expected undefined to equal 28",
@@ -108,27 +108,16 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js myFind returns the value if found",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 4",
-        "showDiff": true,
-        "expected": 4,
-        "stack": "AssertionError: expected undefined to equal 4\n    at Context.<anonymous> (test/indexTest.js:109:53)\n    at processImmediate (node:internal/timers:463:21)"
-      }
+      "err": {}
     },
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js myFind does not traverse the whole array if the value is found early",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected { Spy } to have been called 3 times but got 0",
-        "showDiff": true,
-        "actual": "0",
-        "expected": "3",
-        "stack": "AssertionError: expected { Spy } to have been called 3 times but got 0\n    at Context.<anonymous> (test/indexTest.js:119:39)\n    at processImmediate (node:internal/timers:463:21)"
-      }
+      "err": {}
     },
     {
       "title": "returns undefined if the value is not present",
@@ -160,7 +149,7 @@
     {
       "title": "correctly returns the size of the collection when an array is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection when an array is passed",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "message": "expected undefined to equal 4",
@@ -172,7 +161,7 @@
     {
       "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection (amount of keys) when an object is passed",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "message": "expected undefined to equal 4",
@@ -191,14 +180,14 @@
     {
       "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js myFirst returns the first n elements of the collection when the second optional argument (n) is provided",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the last element of the collection",
       "fullTitle": "index.js myLast returns the last element of the collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -262,38 +251,13 @@
     {
       "title": "returns the correct reduced value from object values",
       "fullTitle": "index.js myReduce returns the correct reduced value from object values",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "message": "expected undefined to equal 28",
         "showDiff": true,
         "expected": 28,
         "stack": "AssertionError: expected undefined to equal 28\n    at Context.<anonymous> (test/indexTest.js:81:28)\n    at processImmediate (node:internal/timers:463:21)"
-      }
-    },
-    {
-      "title": "returns the value if found",
-      "fullTitle": "index.js myFind returns the value if found",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 4",
-        "showDiff": true,
-        "expected": 4,
-        "stack": "AssertionError: expected undefined to equal 4\n    at Context.<anonymous> (test/indexTest.js:109:53)\n    at processImmediate (node:internal/timers:463:21)"
-      }
-    },
-    {
-      "title": "does not traverse the whole array if the value is found early",
-      "fullTitle": "index.js myFind does not traverse the whole array if the value is found early",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected { Spy } to have been called 3 times but got 0",
-        "showDiff": true,
-        "actual": "0",
-        "expected": "3",
-        "stack": "AssertionError: expected { Spy } to have been called 3 times but got 0\n    at Context.<anonymous> (test/indexTest.js:119:39)\n    at processImmediate (node:internal/timers:463:21)"
       }
     },
     {
@@ -319,7 +283,7 @@
     {
       "title": "correctly returns the size of the collection when an array is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection when an array is passed",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "message": "expected undefined to equal 4",
@@ -331,7 +295,7 @@
     {
       "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection (amount of keys) when an object is passed",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "message": "expected undefined to equal 4",
@@ -350,14 +314,14 @@
     {
       "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js myFirst returns the first n elements of the collection when the second optional argument (n) is provided",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the last element of the collection",
       "fullTitle": "index.js myLast returns the last element of the collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -393,14 +357,14 @@
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js myEach calls alert with each element passed",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js myEach calls alert properly on object values",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -414,7 +378,7 @@
     {
       "title": "successfully returns a correctly populated array",
       "fullTitle": "index.js myMap successfully returns a correctly populated array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -442,7 +406,7 @@
     {
       "title": "returns the correct reduced value when passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -456,6 +420,20 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myReduce does not modify the original object",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the value if found",
+      "fullTitle": "index.js myFind returns the value if found",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not traverse the whole array if the value is found early",
+      "fullTitle": "index.js myFind does not traverse the whole array if the value is found early",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
