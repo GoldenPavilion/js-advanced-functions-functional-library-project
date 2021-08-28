@@ -2,18 +2,18 @@
   "stats": {
     "suites": 11,
     "tests": 27,
-    "passes": 17,
+    "passes": 19,
     "pending": 0,
-    "failures": 10,
-    "start": "2021-08-28T01:27:53.438Z",
-    "end": "2021-08-28T01:27:54.569Z",
-    "duration": 1131
+    "failures": 8,
+    "start": "2021-08-28T01:38:25.569Z",
+    "end": "2021-08-28T01:38:26.709Z",
+    "duration": 1140
   },
   "tests": [
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js myEach calls alert with each element passed",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -34,14 +34,14 @@
     {
       "title": "successfully returns a correctly populated array",
       "fullTitle": "index.js myMap successfully returns a correctly populated array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js myMap does not modify the original array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -108,7 +108,7 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js myFind returns the value if found",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -129,7 +129,7 @@
     {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js myFilter correctly filters for values that the callback evaluates as true",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -143,31 +143,21 @@
     {
       "title": "correctly returns the size of the collection when an array is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection when an array is passed",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 4",
-        "showDiff": true,
-        "expected": 4,
-        "stack": "AssertionError: expected undefined to equal 4\n    at Context.<anonymous> (test/indexTest.js:155:34)\n    at processImmediate (node:internal/timers:463:21)"
-      }
+      "err": {}
     },
     {
       "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection (amount of keys) when an object is passed",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 4",
-        "showDiff": true,
-        "expected": 4,
-        "stack": "AssertionError: expected undefined to equal 4\n    at Context.<anonymous> (test/indexTest.js:159:34)\n    at processImmediate (node:internal/timers:463:21)"
-      }
+      "err": {}
     },
     {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -205,14 +195,14 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myKeys does not modify the original object",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "retrieves all the values of the object's own properties",
       "fullTitle": "index.js myValues retrieves all the values of the object's own properties",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: Cannot read property 'length' of undefined\n    at arraysEqual (test/indexTest.js:273:12)\n    at Context.<anonymous> (test/indexTest.js:262:9)\n    at processImmediate (node:internal/timers:463:21)",
@@ -222,7 +212,7 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myValues does not modify the original object",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     }
@@ -255,33 +245,9 @@
       }
     },
     {
-      "title": "correctly returns the size of the collection when an array is passed",
-      "fullTitle": "index.js mySize correctly returns the size of the collection when an array is passed",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 4",
-        "showDiff": true,
-        "expected": 4,
-        "stack": "AssertionError: expected undefined to equal 4\n    at Context.<anonymous> (test/indexTest.js:155:34)\n    at processImmediate (node:internal/timers:463:21)"
-      }
-    },
-    {
-      "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
-      "fullTitle": "index.js mySize correctly returns the size of the collection (amount of keys) when an object is passed",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 4",
-        "showDiff": true,
-        "expected": 4,
-        "stack": "AssertionError: expected undefined to equal 4\n    at Context.<anonymous> (test/indexTest.js:159:34)\n    at processImmediate (node:internal/timers:463:21)"
-      }
-    },
-    {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -319,7 +285,7 @@
     {
       "title": "retrieves all the values of the object's own properties",
       "fullTitle": "index.js myValues retrieves all the values of the object's own properties",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: Cannot read property 'length' of undefined\n    at arraysEqual (test/indexTest.js:273:12)\n    at Context.<anonymous> (test/indexTest.js:262:9)\n    at processImmediate (node:internal/timers:463:21)",
@@ -331,7 +297,7 @@
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js myEach calls alert with each element passed",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -352,14 +318,14 @@
     {
       "title": "successfully returns a correctly populated array",
       "fullTitle": "index.js myMap successfully returns a correctly populated array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js myMap does not modify the original array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -401,7 +367,7 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js myFind returns the value if found",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -422,7 +388,7 @@
     {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js myFilter correctly filters for values that the callback evaluates as true",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -434,16 +400,30 @@
       "err": {}
     },
     {
+      "title": "correctly returns the size of the collection when an array is passed",
+      "fullTitle": "index.js mySize correctly returns the size of the collection when an array is passed",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
+      "fullTitle": "index.js mySize correctly returns the size of the collection (amount of keys) when an object is passed",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
       "title": "does not modify the original object",
       "fullTitle": "index.js myKeys does not modify the original object",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myValues does not modify the original object",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     }

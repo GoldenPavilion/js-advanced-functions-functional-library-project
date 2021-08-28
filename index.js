@@ -1,7 +1,7 @@
 // COLLECTION FUNCTIONS
 
 let myEach = function(collection, callback){
-    if(Array.isArray(collection)){
+    if(typeof(collection) === "array"){
         for (let i = 0; i < collection.length; i++){
             callback(collection[i], i, collection)
         }
@@ -16,7 +16,7 @@ let myEach = function(collection, callback){
 
 let myMap = function(collection, callback){
     let newCollection = [];
-    if(Array.isArray(collection)){
+    if(typeof(collection) === "array"){
         for(let i = 0; i < collection.length; i++){
             newCollection.push(callback(collection[i], i, collection));
         }
@@ -60,10 +60,6 @@ let myFind = function(collection, predicate){
 
 
 let myFilter = function(collection, predicate){
-    // predicate is a callback function that returns true or false
-    // return an array
-    // looks through each value in the collection, returning an array of all the values that pass a truth test (predicate)...
-    // ...if no matching values are found, it should return an empty array
     let matches = []
     for (let i = 0; i < collection.length; i++){
         if(predicate(collection[i])){
@@ -76,6 +72,12 @@ let myFilter = function(collection, predicate){
 let mySize = function(collection){
     // returns an integer
     // returns the number of values in the collection 
+    if(typeof(collection) === "array"){
+        return collection.length;
+    } else if (typeof(collection) === "object"){
+        let keys = Object.keys(collection);
+        return keys.length;
+    } 
 }
 
 // ARRAY FUNCTIONS
