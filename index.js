@@ -112,12 +112,18 @@ let myLast = function(array, num = 1){
 
 // OBJECT FUNCTIONS
 
-let myKey = function(object){
-    // returns an array
-    // retrieves all the names of the object's enumerable properties
+let myKeys = function(object){
+    const keys = [];
+    for(let key in object){
+        keys.push(key)
+    };
+    return keys;
 }
 
 let myValues = function(object){
-    // returns an array
-    // return all of the values of the object's properties
+    const values = [];
+    for(let key in object){
+        values.push(object[key])
+    };
+    return values;
 }
