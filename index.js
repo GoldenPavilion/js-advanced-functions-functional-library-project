@@ -89,10 +89,12 @@ let myFirst = function(array, num = 1){
     }
 }
 
-let myLast = function(array, [n]){
-    // [n] is optional integer
-    // return a single element or an array
-    // returns the last element of an array. Passing n will return the last n elements of the array
+let myLast = function(array, num = 1){
+    if(num === 1){
+        return array[array.length - 1];
+    } else {
+        return array.slice(array.length - num, array.length)
+    }
 }
 
 // BONUS
