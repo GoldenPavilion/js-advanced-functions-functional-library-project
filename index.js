@@ -70,8 +70,6 @@ let myFilter = function(collection, predicate){
 }
 
 let mySize = function(collection){
-    // returns an integer
-    // returns the number of values in the collection 
     if(typeof(collection) === "array"){
         return collection.length;
     } else if (typeof(collection) === "object"){
@@ -82,10 +80,13 @@ let mySize = function(collection){
 
 // ARRAY FUNCTIONS
 
-let myFirst = function(array, [n]){
-    // [n] is optional integer
-    // return a single element or an array
-    // returns the first element in an array. Passing the n will return the first n elements of an array
+let myFirst = function(array, num = 1){
+    if(num === 1){
+        return array[0]
+    } else {
+        let start = 0
+        return array.slice(start, num)
+    }
 }
 
 let myLast = function(array, [n]){
