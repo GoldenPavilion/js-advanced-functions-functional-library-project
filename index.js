@@ -1,5 +1,9 @@
 // COLLECTION FUNCTIONS
 
+let standardColl = function(collection){
+    return collection instanceof Array ? collection.slice() : Object.values(collection)
+}
+
 let myEach = function(collection, callback){
     if(typeof(collection) === "array"){
         for (let i = 0; i < collection.length; i++){
@@ -29,18 +33,12 @@ let myMap = function(collection, callback){
     return newCollection;
 }
 
-let myReduce = function(collection, callback, acc = 0){
-    // acc is a starting value for the accumulator
-    // return a single value
-    // iterates through a collection of values and boils it down to a single value
-    // acc starts at the values that's passed in as an argument... 
-    // ...and with each successive step is updated to the return value of callback
-    // if a start value is not passed to myReduce, the first value in the collection is the start value
-    // the callback is passed three arguments: the current value of acc, the current element/value in our iteration...
-    // ...and a reference to the entire collection
-    
+let myReduce = function(collection, callback, acc){
+    collection = standardColl(collection)
+
     if(!acc){
         acc = collection[0]
+        collection = collection.slice(1)
     }
     
     for (let i = 0; i < collection.length; i++){
